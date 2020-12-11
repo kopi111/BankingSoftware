@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="SessionFactor">
+  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost/bankingsoftware</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.show_sql">true</property>
+  <mapping class="com.aoop.OutkastBanking.customerInformation"/>
+  <mapping class="com.aoop.OutkastBanking.customerAddress"/>
+  <mapping class="com.aoop.OutkastBanking.userInformation"/>
+  <mapping class="com.aoop.OutkastBanking.transaction"/>
+  <mapping class="com.aoop.OutkastBanking.accountInformation"/>
+  <mapping class="comBankingApp.AOOPProject.workerClass"/>
+  <mapping class="comBankingApp.AOOPProject.workerLlogin"/>
+ </session-factory>
+</hibernate-configuration>

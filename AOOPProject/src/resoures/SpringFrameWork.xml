@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+ 
+   <bean name="ci" id = "cI" class = "comBankingApp.AOOPProject.customerInformation" scope = "singleton">
+   </bean>
+   
+     <bean name="ca" id = "ca" class = "comBankingApp.AOOPProject.customerAddress" scope = "singleton">
+   </bean>
+   
+   
+     <bean name="aci" id = "cacc" class = "comBankingApp.AOOPProject.accountInformation" scope = "singleton">
+   </bean>
+   
+     <bean name="cm" id = "cmet" class = "comBankingApp.AOOPProject.customerMethods" scope = "singleton">
+   </bean>
+   
+   
+    <bean name="ui" id = "userinfo" class = "comBankingApp.AOOPProject.userInformation" scope = "singleton">
+   </bean>
+   
+   
+    <bean name="wc" id = "workClass" class = "comBankingApp.AOOPProject.workerClass" scope = "singleton">
+   </bean>
+   
+  <bean name="wLog" id = "workLog" class = "comBankingApp.AOOPProject.workerLlogin" scope = "singleton">
+   </bean> 
+   
+
+
+
+
+</beans>

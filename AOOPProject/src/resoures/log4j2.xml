@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+	<appenders>
+	
+	
+	<console name="Console"  target="SYSTEM_OUT">
+	
+	<PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss} [%t] %-5level %logger{36} -%msg%n"/>
+	
+	</console>
+	<File name="File" fileName="hibernate.log">
+	
+	<PatternLayout pattern="%d{yyyy-mm-dd HH:mm:ss} [%t] %-5level %logger{36} -%msg%n"/>
+	</File>
+	</appenders>
+
+
+	<Loggers>
+			<Root level="info">
+			
+			<AppenderRes ref="Console"/>
+			
+			</Root>
+			
+			<Loggger name="org.hibernate" level="debug">
+			<AppenderRes ref="Console"/>
+			<AppenderRes ref="File"/>
+			</Loggger>
+	
+	
+	
+	</Loggers>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Configuration>
